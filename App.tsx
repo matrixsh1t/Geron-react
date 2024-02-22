@@ -1,6 +1,7 @@
 import { FC } from "react";
 import { Header } from "./src/components/Header";
 import { Text } from "./src/shared/ui/Text";
+import Example from "./src/components/Content";
 
 export const App: FC = function App() {
   return (
@@ -15,6 +16,7 @@ export const App: FC = function App() {
       <Text textType="regular" textWeight="thin">
         {"Decription font-extralight"}
       </Text>
+      <Example></Example>
     </>
   );
 };

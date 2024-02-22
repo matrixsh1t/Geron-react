@@ -15,15 +15,15 @@ export const Text: FC<Props> = function Text(props) {
 
   switch (textType) {
     case "big": {
-      fontSize = "text-9xl";  
+      fontSize = "text-3xl";  
       break;
     }
     case "medium": {
-      fontSize = "text-6xl";
+      fontSize = "text-2xl";
       break;
     }
     case "small": {
-      fontSize = "text-3xl";
+      fontSize = "text-1xl";
       break;
     }
     case "regular": {
@@ -38,7 +38,7 @@ export const Text: FC<Props> = function Text(props) {
   }
 
   return (
-    <p {...rest} className={`text-center ${fontSize} ${fontWeight} mt-7`}>
+    <p {...rest} className={`text-left ${fontSize} ${fontWeight} pt-10 tracking-tight text-gray-500`}>
       {props.children}
     </p>
   );
