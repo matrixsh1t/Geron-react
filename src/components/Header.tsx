@@ -12,6 +12,7 @@ export const Header: FC = function Header() {
         <Button onClick={handlePress}>{"Default button"}</Button>
         <Button onClick={handlePress} mode={"border"}>{"Border button"}</Button>
         <Button onClick={handlePress} mode={"dark"}>{"Dark button"}</Button>
+
       </header>
     </>
   );
