@@ -1,9 +1,9 @@
 import { ButtonHTMLAttributes, FC } from "react";
 
-type ButtonType = "default" | "border" | "dark";
+export type ButtonType = "default" | "border" | "dark";
 
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
-  mode?: ButtonType;
+  mode: ButtonType;
 }
 
 export const Button: FC<Props> = function Button(props) {
@@ -21,8 +21,7 @@ export const Button: FC<Props> = function Button(props) {
   return (
     <button
       {...rest}
-      className={`rounded pb-2 pt-2 w-full ${bgButton} ${rest.className}`}
-    >
+      className={`rounded pb-2 pt-2 w-full border-white ${bgButton} ${rest.className}`}>
       <p className={`font-semibold ${textColor}`}>{rest.children}</p>
     </button>
   );

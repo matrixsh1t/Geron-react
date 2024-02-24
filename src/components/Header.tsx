@@ -9,10 +9,9 @@ export const Header: FC = function Header() {
   return (
     <>
       <header className={"bg-blue-800 h-20"}>
-        <Button onClick={handlePress}>{"Default button"}</Button>
+        <Button onClick={handlePress} mode="default">{"Default button"}</Button>
         <Button onClick={handlePress} mode={"border"}>{"Border button"}</Button>
         <Button onClick={handlePress} mode={"dark"}>{"Dark button"}</Button>
-
       </header>
     </>
   );
